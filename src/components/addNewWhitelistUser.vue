@@ -94,7 +94,7 @@
 			@valueChanged="extRet.durationHours = +$event.value * $event.option"
 			optional
 		/>
-		<input name="discordUsername" type="text" placeholder="Discord Username" optional regex="^.{1,32}#[0-9]{4}$" />
+		<input name="discordUsername" type="text" placeholder="Discord Username" optional regex="^[A-Za-z._]{2,32}$|^.{3,32}#[0-9]{4}$" />
 	</popup>
 </template>
 
